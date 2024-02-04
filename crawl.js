@@ -12,7 +12,11 @@ function normalizeURL(url) {
     }
 }
 
+function getURLsFromHTML(htmlBody, baseURL) {
+    return ['afasdf', 'asdfs']
+}
 
 module.exports = {
     normalizeURL,
+    getURLsFromHTML,
 }
