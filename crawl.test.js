@@ -37,7 +37,7 @@ function testGetURLsFromHTML() {
     </html>
     `
     const baseURL = 'potato.boot.dev'
-    const absoluteURLs = ['https://blog.boot.dev','https://potato.boot.dev','https://akram.dev']
+    const absoluteURLs = ['https://potato.boot.dev']
 
     test('Test that relative URLs are converted to absolute URLs.', () => {
         const urls = getURLsFromHTML(htmlBody, baseURL)
@@ -52,5 +52,5 @@ function testGetURLsFromHTML() {
     })
 }
 
-//testNormalizeURL()
+testNormalizeURL()
 testGetURLsFromHTML()
